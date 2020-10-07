@@ -1,30 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hacktober Portfolios
 
-## Getting Started
+## Steps to add your portfolio:
 
-First, run the development server:
+1. Fork this repository
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+2. Add a screenshot of your portolio website or an image to the `public` folder
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Add a `yourname.md` file to the `portfolios` directory
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+4. Add all info about your portfolio
 
-## Learn More
+5. Example:
+   
+   ```
+   ---
+   name: Loeka Lievens
+   portfolio: https://www.loeka.me
+   imgUrl: loekalievens.png
+   skills: react nodejs typescript
+   ---
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+6. Create a PR
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+7. Wait until your PR is reviewed 😀
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Data to add to the markdown file
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| name      | Your name                                     |
+|:---------:|:---------------------------------------------:|
+| portfolio | A link to your person portfolio               |
+| imgUrl    | The name of your image                        |
+| skills    | 1 to 3 of your main skills divided by a space |
