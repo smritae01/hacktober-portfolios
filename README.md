@@ -29,8 +29,9 @@ THIS REPOSITORY IS IN COMPLIANCE WITH THE HACKTOBERFEST VALUES AND RULES
 
 ## Data to add to the markdown file
 
-| name      | Your name                                                                   |
+| data      | thing to add                                                                |
 |:---------:|:---------------------------------------------------------------------------:|
+| Name      | Your name                                                                   |
 | portfolio | A link to your person portfolio                                             |
 | imgUrl    | The name of your image                                                      |
 | skills    | 1 to 3 of your main skills divided by a space (You can add your own skills) |
