@@ -1,5 +1,7 @@
 # Hacktober Portfolios
 
+THIS REPOSITORY IS IN COMPLIANCE WITH THE HACKTOBERFEST VALUES AND RULES
+
 ## Steps to add your portfolio:
 
 1. Fork this repository
