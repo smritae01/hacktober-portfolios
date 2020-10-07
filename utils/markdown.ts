@@ -5,33 +5,34 @@ import matter from "gray-matter";
 const portfoliosDirectory = path.join(process.cwd(), "portfolios");
 
 export interface PortfolioMetadata {
-	name: string;
-	portfolio: string;
-	imgUrl: string;
-	skills: string;
+  name: string;
+  portfolio: string;
+  imgUrl: string;
+  skills: string;
 }
 
 export const getSortedPortfoliosData = () => {
-	const fileNames = readdirSync(portfoliosDirectory);
+  const fileNames = readdirSync(portfoliosDirectory);
 
-	return fileNames.map(fileName => {
-		const fullPath = path.join(portfoliosDirectory, fileName);
-		const fileContent = readFileSync(fullPath, "utf-8");
+  return fileNames.map(fileName => {
+    const fullPath = path.join(portfoliosDirectory, fileName);
+    const fileContent = readFileSync(fullPath, "utf-8");
 
-		const matterResult = matter(fileContent);
+    const matterResult = matter(fileContent);
 
-		return matterResult.data as PortfolioMetadata;
-	});
+    return matterResult.data as PortfolioMetadata;
+  });
 };
 
 export const getAllSkills = () => {
-	const data = getSortedPortfoliosData();
+  const data = getSortedPortfoliosData();
 
-	return Array.from(
-		new Set(
-			...data.map(data => {
-				return data.skills.toLowerCase().split(" ");
-			})
-		)
-	);
+  let returnData = [];
+  data.forEach(data => {
+    data.skills
+      .toLowerCase()
+      .split(" ")
+      .forEach(skill => returnData.push(skill));
+  });
+  return Array.from(new Set(returnData));
 };
