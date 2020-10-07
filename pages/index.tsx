@@ -22,7 +22,7 @@ import {
   Row,
   Skill,
   Skills,
-} from "./index.styles";
+} from "../components/index.styles";
 
 const HomePage: NextPage<{
   projectsData: PortfolioMetadata[];
@@ -87,8 +87,8 @@ const HomePage: NextPage<{
             <Skill
               key={skill}
               skillColor={color}
-							onClick={() => setSelectedSkill(skill.toLowerCase())}
-							selected={skill.toLowerCase() === selectedSkill}
+              onClick={() => setSelectedSkill(skill.toLowerCase())}
+              selected={skill.toLowerCase() === selectedSkill}
             >
               {capitalizeFirstLetter(skill)}
             </Skill>
