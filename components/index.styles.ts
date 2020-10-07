@@ -102,6 +102,7 @@ export const Project = styled.a`
   box-shadow: 10px 10px 0 0 #272d37;
   border-radius: 2px;
   transition: transform 0.3s ease-in-out;
+  border: 2px solid #465162;
   &:hover {
     transform: translateY(-5px);
   }
@@ -126,8 +127,6 @@ export const NameWrapper = styled.div`
   justify-content: space-evenly;
   align-items: flex-start;
   flex-direction: column;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
   h2 {
     color: white;
     font-weight: 400;
