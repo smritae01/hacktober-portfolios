@@ -114,8 +114,6 @@ export const Project = styled.a`
 export const Img = styled.img`
   max-width: 100%;
   float: left;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
 `;
 
 export const NameWrapper = styled.div`
