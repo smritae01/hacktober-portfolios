@@ -27,8 +27,8 @@
 
 ## Data to add to the markdown file
 
-| name      | Your name                                     |
-|:---------:|:---------------------------------------------:|
-| portfolio | A link to your person portfolio               |
-| imgUrl    | The name of your image                        |
-| skills    | 1 to 3 of your main skills divided by a space |
+| name      | Your name                                                                   |
+|:---------:|:---------------------------------------------------------------------------:|
+| portfolio | A link to your person portfolio                                             |
+| imgUrl    | The name of your image                                                      |
+| skills    | 1 to 3 of your main skills divided by a space (You can add your own skills) |
